@@ -8,7 +8,7 @@ describe('internal site testing', () => {
         cy.pause();
     });
     it ('"Ok" should be active after typed all field', () => {
-        cy.get('input[name=preparation_time]').type('05:00');
+        cy.get('input[name=preparation_time]').type('05:00:00');
         cy.get('input[name=type]').parent().click('right');
         cy.get('li').first().click();
         cy.get('input[name=name]').type('something');
